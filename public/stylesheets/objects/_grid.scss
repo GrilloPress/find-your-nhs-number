@@ -1,0 +1,179 @@
+// Grid layout
+// ==========================================================================
+
+// Usage:
+// For two equal columns
+
+// <div class="grid-row">
+//   <div class="column--one-half">
+//
+//   </div>
+//   <div class="column--one-half">
+//
+//   </div>
+// </div>
+
+// Use .grid-row to define a row for grid columns to sit in
+.grid-row {
+  @include grid-row;
+}
+
+// Use .grid-column to create a grid column with 15px gutter
+// By default grid columns break to become full width at 925px
+.column--full {
+  @include grid-column(1 / 1);
+  @include grid-column(1 / 1, mobile);
+}
+
+.column--one-quarter {
+  @include grid-column(1 / 4);
+
+  &.tablet {
+
+    @include grid-column(1 / 4, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(1 / 4, mobile);
+  }
+}
+
+.column--one-third {
+  @include grid-column(1 / 3);
+
+  &.tablet {
+
+    @include grid-column(1 / 3, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(1 / 3, mobile);
+  }
+}
+
+.column--one-half {
+  @include grid-column(1 / 2);
+
+  &.tablet {
+
+    @include grid-column(1 / 2, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(1 / 2, mobile);
+  }
+}
+
+.column--two-thirds {
+  @include grid-column(2 / 3);
+
+  &.tablet {
+
+    @include grid-column(2 / 3, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(2 / 3, mobile);
+  }
+}
+
+.column--three-quarters {
+  @include grid-column(3 / 4);
+}
+
+// Right floating column classes
+.column--one-quarter-right {
+  @include grid-column(1 / 4, $float: right);
+}
+
+.column--one-third-right {
+  @include grid-column(1 / 3, $float: right);
+}
+
+.column--one-half-right {
+  @include grid-column(1 / 2, $float: right);
+}
+
+.column--two-thirds-right {
+  @include grid-column(2 / 3, $float: right);
+}
+
+.column--three-quarters-right {
+  @include grid-column(3 / 4, $float: right);
+}
+
+.column--one-fifth-right {
+  @include grid-column(1 / 5, $float: right);
+}
+
+.column--one-fifth {
+  @include grid-column(1 / 5);
+}
+.column--two-fifths {
+  @include grid-column(2 / 5);
+}
+.column--three-fifths {
+  @include grid-column(3 / 5);
+}
+.column--four-fifths {
+  @include grid-column(4 / 5);
+}
+
+
+
+.column--one-sixth {
+  @include grid-column(1 / 6);
+
+  &.tablet {
+
+    @include grid-column(1 / 6, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(1 / 6, mobile);
+  }
+}
+
+
+.column--four-sixes {
+  @include grid-column(4 / 6);
+}
+
+
+.column--five-sixes {
+  @include grid-column(5 / 6);
+
+  &.tablet {
+
+    @include grid-column(5 / 6, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(5 / 6, mobile);
+  }
+}
+
+
+.column--one-seventh {
+  @include grid-column(1 / 7);
+}
+.column--one-eighth {
+  @include grid-column(1 / 8);
+}
+.column--one-twelth {
+  @include grid-column(12 / 12, mobile);
+  @include grid-column(1 / 12, tablet);
+  @include grid-column(1 / 12);
+}
+
+.column--eleven-twelves {
+  @include grid-column(12 / 12, mobile);
+  @include grid-column(11 / 12, tablet);
+  @include grid-column(11 / 12);
+}

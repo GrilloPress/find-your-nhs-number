@@ -1,0 +1,19 @@
+// behaviour seen in Chrome with the address rendering in italic
+//
+// strange <br /> behaviour
+
+address {
+
+  font-style: normal;
+}
+
+.address-list {
+
+  @extend .link-list;
+
+  // ugly hack. Seems to be injecting _base.scss over this without the !important...
+  li {
+    margin: 0 !important;
+  }
+
+}

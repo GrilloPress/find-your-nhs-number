@@ -1,0 +1,90 @@
+.banner {
+
+  color: #000;
+  @include core-font(16);
+  font-weight: 400;
+  $default-border-bottom: 2px dashed;
+
+  &.alpha {
+
+    background-color: #f9b905;
+    border-bottom: $default-border-bottom;
+
+    span {
+
+      padding: 1px 5px;
+      color: #f9b905;
+      background-color: #000;
+
+    }
+
+    a {
+
+      &:hover {
+
+        color: #f9b905;
+        background-color: #000;
+
+      }
+    }
+
+  }
+
+  &.beta {
+
+    background-color: lighten( $blue, 60%);
+    border-bottom: $default-border-bottom;
+
+    span {
+
+      padding: 1px 5px;
+      color: $black;
+      background-color: white;
+      border: 1px solid $blue;
+
+    }
+
+    a {
+
+      &:hover {
+
+        color: white;
+        background-color: $blue;
+
+      }
+    }
+
+  }
+
+  &.cookie {
+
+    background-color: lighten( $yellow, 25%);
+    border-bottom: none;
+
+    a {
+
+      &:hover {
+
+        color: lighten( $yellow, 25%);
+        background-color: black;
+
+      }
+    }
+
+  }
+
+  a {
+
+    color: black;
+    text-decoration: underline;
+    padding: 1px;
+
+  }
+
+  .page-section {
+
+    padding: 8px 0;
+
+  }
+
+}

@@ -1,0 +1,21 @@
+.link--new-tab {
+
+  text-decoration: none;
+  color: $black;
+
+  span.underline {
+
+    text-decoration: underline;
+
+  }
+}
+
+.page-links__container {
+
+  margin: 16px 0;
+
+  @include media(mobile) {
+    margin: 16px 0;
+  }
+
+}

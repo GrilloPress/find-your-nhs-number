@@ -1,0 +1,24 @@
+.review-your-answers {
+
+  dl {
+
+    display: inline-block;
+  }
+
+  dt {
+
+  }
+
+  dd {
+
+    display: inline-block;
+
+    .answer {}
+
+    &.change {
+
+      float: right;
+    }
+
+  }
+}

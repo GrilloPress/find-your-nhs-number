@@ -1,0 +1,129 @@
+/* Scss
+
+.article-pagination {
+  @include clearfix;
+  border-top: 1px solid tint( $blue, 80%);
+  list-style: none;
+  padding-left: 0;
+}
+
+.article-pagination__item {
+
+  @include media(tablet) {
+    + .article-pagination__item {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 16px 4px;
+
+    &:hover {
+
+      background-color: $grey-5;
+    }
+  }
+}
+
+@include media(tablet) {
+  .article-pagination__item--left {
+    float: left;
+    width: 47%;
+  }
+
+  .article-pagination__item--right {
+    float: right;
+    text-align: right;
+    width: 47%;
+  }
+}
+
+.article-pagination__prefix {
+  @include core-font(24);
+  color: black;
+  display: block;
+}
+
+.article-pagination__title {
+  @include core-font(16);
+  text-decoration: underline;
+}
+*/
+
+.article-pagination {
+	border-top: 1px solid #ccdff1;
+	list-style: none;
+	padding-left: 0;
+}
+.article-pagination:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+@media (min-width: 641px) {
+	.article-pagination__item + .article-pagination__item {
+		margin-top: 0;
+	}
+}
+.article-pagination__item a {
+	display: block;
+	text-decoration: none;
+	padding: 16px 4px;
+}
+.article-pagination__item a:hover {
+	background-color: #f0f4f5;
+}
+@media (min-width: 641px) {
+	.article-pagination__item--left {
+		float: left;
+		width: 47%;
+	}
+	.article-pagination__item--right {
+		float: right;
+		text-align: right;
+		width: 47%;
+	}
+}
+.article-pagination__prefix {
+	font-family: "Frutiger W01", Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	text-transform: none;
+	color: black;
+	display: block;
+}
+@media (min-width: 641px) {
+	.article-pagination__prefix {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+@media (min-width: 925px) {
+	.article-pagination__prefix {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+.article-pagination__title {
+	font-family: "Frutiger W01", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: none;
+	text-decoration: underline;
+}
+@media (min-width: 641px) {
+	.article-pagination__title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+@media (min-width: 925px) {
+	.article-pagination__title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

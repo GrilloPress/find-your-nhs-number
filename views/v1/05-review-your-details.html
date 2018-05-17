@@ -1,0 +1,100 @@
+{% set title = 'Review your details - Find your NHS number' %}
+{% set content_title = 'Review your details' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/01-your-name.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <h1 class="page-title">{{content_title}}</h1>
+              <div class="reading-width">
+                <div class="callout callout--info">
+                  <dl class="review-your-answers">
+                    <div>
+                      <dt class="question">
+                        Your name
+                      </dt>
+                      <dd class="answer">
+                        Sally Faketon
+                      </dd>
+                      <dd class="change">
+                        <a href="/your-details">
+                          Change<span class="util-visuallyhidden"> your name</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
+
+                  <dl class="review-your-answers">
+                    <div>
+                      <dt class="question">
+                        Your gender
+                      </dt>
+                      <dd class="answer">
+                        Female
+                      </dd>
+                      <dd class="change">
+                        <a href="/your-details">
+                          Change<span class="util-visuallyhidden"> your gender</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
+
+                  <dl class="review-your-answers">
+                    <div>
+                      <dt class="question">
+                        Your date of birth
+                      </dt>
+                      <dd class="answer">
+                        05 07 1948
+                      </dd>
+                      <dd class="change">
+                        <a href="/your-details">
+                          Change<span class="util-visuallyhidden"> your date of birth</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
+
+                  <dl class="review-your-answers">
+                    <div>
+                      <dt class="question">
+                        Your postcode
+                      </dt>
+                      <dd class="answer">
+                        Ls1 1qf
+                      </dd>
+                      <dd class="change">
+                        <a href="/your-details">
+                          Change<span class="util-visuallyhidden"> your postcode</span>
+                        </a>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+
+
+                  <form class="measure" method="post" action="/{{PROTOTYPE_URL}}/06-verification-option">
+                      <input type="submit" class="button" id="submit-details" value="submit">
+                  </form>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

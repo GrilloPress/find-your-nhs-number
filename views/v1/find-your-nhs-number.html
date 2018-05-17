@@ -1,0 +1,62 @@
+{% set title = 'Manage your choice - Find your NHS Number' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% set content_title = "Find your NHS Number" %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/0X-before-you-start.js"></script>
+<script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
+{% endblock %}
+{% extends 'layouts/choices.html' %}
+
+{% block body %}
+<div class="breadcrumb" aria-label="breadcrumb">
+  <ol>
+    <li><a href="#">Home</a></li>
+    <li class="breadcrumb__last">{{content_title}}</li>
+  </ol>
+</div>
+
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <h1 class="page-title__NHSUK">{{content_title}}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            Use this service to find your NHS number.
+          </p>
+          <p>
+            An NHS Number is a unique  10 digit number used to identify you and match you to your health records. Everyone registered with the NHS in England, Wales and the Isle of Man has their own number.
+          </p>
+          <p>If you are unable to find your NHS number on any recent document sent to you, then this service may be able to provide you with it.</p>
+          <h2 class="h3" id="before-you-start">Before you start</h2>
+          <p>
+            You must have an email address or phone number registered with an NHS service to continue online. Ask your GP Practice for help if you need to confirm your contact information is up-to-date.
+          </p>
+          <p>To continue you will need:</p>
+          <ul>
+            <li>access to your email or mobile phone</li>
+          </ul>
+          <a role="button" class="button" aria-label="Manage your health data choice using the online service" href="/{{PROTOTYPE_URL}}/how-to-use-the-online-service">Start</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

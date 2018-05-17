@@ -1,0 +1,15 @@
+{% set title = 'Error' %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main" class="app--error">
+  <div class="page-section">
+    <div class="grid-row">
+      <div class="column--full">
+        <h1>{{message}} - {{error.status}}</h1>
+        <p><pre>{{error.stack}}</pre></p>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

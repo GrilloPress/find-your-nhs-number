@@ -1,0 +1,37 @@
+{% set title = 'Find your NHS number' %}
+{% block scripts %}
+
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <p>Homepage for {{title}} prototypes.</p>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column--two-thirds">
+
+        <div class="callout">
+          <h3>
+            <a href="/v1/index">Prototype v1</a>
+          </h3>
+          <p>
+            v1 Prototype
+          </p>
+          <p><a role="button" class="button" href="/v1/find-your-nhs-number">Start v1 prototype</a></p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</main>
+{% endblock %}

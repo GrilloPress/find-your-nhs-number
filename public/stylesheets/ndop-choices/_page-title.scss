@@ -1,0 +1,51 @@
+/*
+
+.page-title__NHSUK {
+
+  @include bold-font(40);
+  padding: 22px 0 4px 0;
+
+  @include media(mobile) {
+    padding: 0;
+  }
+
+    small {
+
+      display: block;
+      font-size: 60%;
+      font-weight: 300;
+    }
+  }
+
+*/
+
+.page-title__NHSUK {
+     font-family: "Frutiger W01", Arial, sans-serif;
+     font-size: 36px;
+     font-weight: 600;
+     line-height: 48px;
+     text-transform: none;
+     padding: 22px 0 4px 0;
+}
+ @media (min-width: 641px) {
+     .page-title__NHSUK {
+         font-size: 40px;
+         line-height: 48px;
+    }
+}
+ @media (min-width: 925px) {
+     .page-title__NHSUK {
+         font-size: 40px;
+         line-height: 48px;
+    }
+}
+ @media (max-width: 640px) {
+     .page-title__NHSUK {
+         padding: 0;
+    }
+}
+ .page-title__NHSUK small {
+     display: block;
+     font-size: 60%;
+     font-weight: 300;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  {% include "partials/_choices_header.html" %}
+  {% import "partials/_macros.html" as patterns %}
+  {% block scripts %}{% endblock %}
+  <script src="/javascripts/cookie.js"></script>
+</head>
+<body class="{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}">
+  <div class="skiplinks">
+    <div class="skiplinks__inner">
+      <a href="#content" class="skiplinks__link">Skip to main content</a>
+    </div>
+  </div>
+
+  {% if COOKIE_TRUE %}
+  <div class="banner cookie">
+    <div class="page-section">
+      We use cookies to make this service simpler. <a target="_blank" rel="nofollow" href="/{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}/00-cookie-policy">Find out more about cookies<span class="util-visuallyhidden"> - Page opens in new window</span></a><span aria-hidden="true"> (opens in new window)</span>.
+    </div>
+  </div>
+  {% endif %}
+
+  <header class="site-header">
+    <div class="site-header__top">
+      <div class="site-header__brand">
+        <!-- noindex -->
+        <a href="#">
+          <img src="https://www.nhs.uk/static/nhsuk_shared/img/choices-logo.5e9e38a7e3ff.png" class="nhs-choices-logo" alt="Go to NHS.UK homepage">
+        </a>
+        <span class="site-header__tagline">Your health, your choices</span>
+      </div>
+
+      <div class="site-header__controls">
+        <div class="site-header__user-links user-links">
+          <span class="user-links__right-align">
+            <a class="user-links__account" href="#">User Accounts</a>
+          </span>
+        </div>
+        <div id="search" class="site-header__search search">
+          <form id="gs">
+            <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search__input tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input id="q" name="q" class="search__input tt-input" type="text" placeholder="Enter a search term" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Frutiger W01&quot;; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-suggestions"></div></div></span>
+
+          </form>
+        </div>
+        <div id="menu-icon" class="site-header__menu-icon menu-icon">
+          <a id="main-nav-toggle" class="menu-icon__link" href="#">Menu</a>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <nav id="main-nav" class="site-header__nav main-nav main-nav">
+
+      <div id="main-nav-items" class="main-nav__items">
+        <ul class="main-nav__page-menu">
+          <li class="nodrop">
+            <a href="#">Health A-Z</a>
+          </li>
+
+          <li class="nodrop">
+            <a href="#">Live Well</a>
+          </li>
+
+          <li class="nodrop">
+            <a href="#">Care and support</a>
+          </li>
+
+          <li class="nodrop">
+            <a href="#">Health news</a>
+          </li>
+
+          <li class="nodrop">
+            <a href="#">Services near you</a>
+          </li>
+
+        </ul>
+        <ul class="main-nav__account-menu account-menu">
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Create an account</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- endnoindex -->
+  </header>
+    {% block body %}{% endblock %}
+    {% if SUBFOOTER_TRUE %}
+      {% include "partials/_choices_local_footer.html" %}
+    {% endif %}
+
+    {% include "partials/_choices_footer.html" %}
+    {% include "partials/_analytics.html" %}
+
+  </body>
+</html>

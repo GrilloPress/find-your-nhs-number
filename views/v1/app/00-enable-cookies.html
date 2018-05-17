@@ -1,0 +1,36 @@
+{% set title = 'Enable cookies to continue - Find your NHS number' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">Enable cookies to continue</h1>
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>The 'Find your NHS number' service puts small files (known as ‘cookies’) onto your computer to keep your visit secure.</p>
+              <p>
+                To be able to use this service online, you need to enable cookies.
+              </p>
+              <p>Find out more about <a target="_blank" href="https://www.aboutcookies.org/">how to manage cookies<span class="util-visuallyhidden"> - Page opens in new window</span></a> <span aria-hidden="true"> (opens in new window)</span>.</p>
+                <h2 class="h3" id="other-ways-to-manage-your-choice">Other ways to manage your choice </h2>
+                <p>
+                  If you are unable or do not wish to use our online service, see <a href="/{{PROTOTYPE_URL}}/00-other-ways-to-manage-your-choice">other ways to manage your choice</a>.
+                </p>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

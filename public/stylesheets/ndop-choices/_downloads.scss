@@ -1,0 +1,14 @@
+/*
+$grey-5
+*/
+
+.thumbnail--download {
+
+  border: 5px solid #f0f4f5; //$grey-5
+
+  &:hover {
+
+    opacity: 0.7;
+  }
+
+}

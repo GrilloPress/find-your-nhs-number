@@ -1,0 +1,166 @@
+// inherits default styles from callout
+
+.callout--interruption {
+
+  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
+  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
+  box-shadow: 0px 0px 14px 3px #ebebeb;
+  border: 1px solid #cbd6d8;
+  border-radius: 5px;
+
+  h1 {
+
+    @include bold-font(36);
+  }
+
+  h2 {
+
+    @include bold-font(24);
+  }
+
+  .column--number-counter {
+
+    width: 8%;
+    float: left;
+  }
+
+  .number-circle {
+
+    padding: 2px 12px;
+    background-color: $blue;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+    display: inline-block;
+    text-align: center;
+
+    @include media(mobile) {
+      margin: 16px 0;
+    }
+  }
+
+  .link-list {
+
+    li {
+
+      margin-bottom: 16px;
+      @include core-font(20);
+    }
+
+    &.no-margin {
+
+      margin: 0;
+
+      li {
+
+        margin: 0;
+      }
+    }
+
+    &.no-margin-li {
+
+      margin: 1em 0;
+
+      li {
+
+        margin: 0;
+      }
+    }
+  }
+
+  &.alt {
+
+    background-color: #004D97;
+    color: white;
+
+    .number-circle {
+
+      color: $black;
+      background-color: white;
+      border: 1px solid;
+    }
+  }
+
+  .int-card {
+
+    .int-card--img {
+
+      text-align: center;
+      position: relative;
+      padding: 0 2em;
+      @include media(mobile) {
+        display: none;
+      }
+
+      .number-circle {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 13px;
+      }
+
+      img {
+
+        margin: auto;
+        padding: 2em;
+        width: 100%;
+      }
+    }
+
+    .int-card--body {
+
+      margin: 0;
+    }
+  }
+
+  ol {
+    counter-reset:li;
+    margin-left:0;
+    padding-left:0;
+
+    p {
+
+      margin-top: 4px;
+    }
+
+    li {
+
+      position:relative;
+      list-style:none;
+      margin:0 0 6px 2em;
+      padding:4px 16px;
+
+      &:before {
+
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        top: -2px;
+        left: -2em;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 2em;
+        margin-right: 8px;
+        border: 1px solid $black;
+        color: $black;
+        background: white;
+        text-align: center;
+        padding: 3px;
+        border-radius: 50%;
+
+      }
+    }
+  }
+
+    li ol,li ul {
+    margin-top:6px;
+    }
+
+    ol ol li:last-child {
+    margin-bottom:0;
+    }
+
+
+}

@@ -1,0 +1,73 @@
+.link-list__row {
+  @include grid-row;
+}
+
+.link-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-list--numbered {
+  list-style: decimal;
+
+  .link-list__item {
+    margin-left: 1.2em;
+  }
+}
+
+.link-list--one-half {
+  @include grid-column(1 / 2);
+
+  + .link-list--one-half {
+    margin-top: $default-spacing-unit / 2;
+
+    @include media(desktop) {
+      margin-top: 0;
+    }
+  }
+}
+
+// inline list
+
+.list--inline {
+
+  padding-left: 0;
+
+  li {
+
+    list-style: none;
+    display: inline;
+
+    }
+  }
+
+  .list--unstyled {
+
+    padding-left: 0;
+
+    li {
+
+      list-style: none;
+    }
+
+  }
+
+  .list--breadcrumb {
+
+    padding-left: 0;
+    font-size:    18px;
+
+    li {
+
+      list-style: none;
+      padding-left: 0;
+      display: inline;
+
+      // Ignores first li and makes the second li and on have a > before it
+        + li:before {
+        content: ">";
+        padding: 0 5px;
+        color: $black;
+      }
+    }
+  }

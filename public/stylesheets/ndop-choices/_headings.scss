@@ -1,0 +1,100 @@
+/*
+h1, .h1 {
+  @include bold-font(64);
+}
+
+h2, .h2 {
+  @include bold-font(36);
+}
+
+h3, .h3 {
+  @include bold-font(24);
+}
+
+h4, .h4 {
+  @include bold-font(20);
+}
+
+h5, .h5 {
+  @include bold-font(16);
+}
+
+h6 {
+  @include core-font(16);
+}
+*/
+
+.h1 {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: none; }
+  @media (min-width: 641px) {
+    .h1 {
+      font-size: 48px;
+      line-height: 64px; } }
+  @media (min-width: 925px) {
+    .h1 {
+      font-size: 64px;
+      line-height: 80px; } }
+
+.h2 {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: none; }
+  @media (min-width: 641px) {
+    .h2 {
+      font-size: 32px;
+      line-height: 48px; } }
+  @media (min-width: 925px) {
+    .h2 {
+      font-size: 36px;
+      line-height: 48px; } }
+
+.h3 {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: none; }
+  @media (min-width: 641px) {
+    .h3 {
+      font-size: 24px;
+      line-height: 32px; } }
+  @media (min-width: 925px) {
+    .h3 {
+      font-size: 24px;
+      line-height: 32px; } }
+
+.h4 {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: none; }
+  @media (min-width: 641px) {
+    .h4 {
+      font-size: 20px;
+      line-height: 32px; } }
+  @media (min-width: 925px) {
+    .h4 {
+      font-size: 20px;
+      line-height: 32px; } }
+
+.h5 {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: none; }
+  @media (min-width: 641px) {
+    .h5 {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media (min-width: 925px) {
+    .h5 {
+      font-size: 16px;
+      line-height: 24px; } }

@@ -1,0 +1,25 @@
+.calder {
+
+  .v1 {
+
+    h2 {
+
+      font-size: 28px;
+    }
+  }
+}
+
+@import "components/choices_footer";
+
+.app--error {
+
+  pre {
+
+    width: 100%;
+    overflow: scroll;
+    padding: 2em;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+}

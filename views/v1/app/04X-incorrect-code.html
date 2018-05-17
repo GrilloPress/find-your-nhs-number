@@ -1,0 +1,39 @@
+{% set title = 'Contact us - Find your NHS number' %}
+{% set content_title = 'Contact us' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{content_title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                Sorry, we were unable to verify your security code.
+              </p>
+              <p>
+                We may be able to guide you through the service, or manage your choice on your behalf.
+              </p>
+              <p>
+                Call: 0300 303 5678
+              </p>
+              <p>
+                Open: 9am to 5pm Monday to Friday (excluding bank holidays).
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+</main>
+{% endblock %}
