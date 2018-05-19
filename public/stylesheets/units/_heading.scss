@@ -1,11 +1,11 @@
 @import "../environment/tools/mixins/typography";
 
 h1, .h1 {
-  @include bold-font(64);
+  @include bold-font(40);
 }
 
 h2, .h2 {
-  @include bold-font(36);
+  @include bold-font(32);
 }
 
 h3, .h3 {

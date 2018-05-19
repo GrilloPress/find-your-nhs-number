@@ -2,6 +2,8 @@
 {% set content_title = 'Your NHS number' %}
 {% set PROTOTYPE_URL = 'v1' %}
 {% block scripts %}
+<script src="/javascripts/clipboard.min.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/08-your-nhs-number.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 {% block body %}
@@ -14,19 +16,36 @@
 
   <div class="page-section">
     <div class="reading-width">
-      <h1 class="page-title">{{content_title}}</h1>
       <div class="grid-row">
         <div class="column--two-thirds">
+          <h1>{{content_title}}</h1>
             <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">
-              Your NHS has been sent!
+              We have sent you a message with your NHS number!
             </p>
-            <div class="callout callout--info">
-              <p>
-                Your NHS number is: <strong>485 777 3456</strong>
-              </p>
+
+            <div>
+              <dl class="review-your-answers nhs-number">
+                <div>
+                  <dt class="question">
+                    Your NHS number
+                  </dt>
+                  <dd class="answer">
+                    485 777 3456
+                  </dd>
+                  <dd class="change">
+                    <a href="#" class="copy-to-clipboard" data-clipboard-text="485 777 3456">
+                        Copy to clipboard
+                    </a>
+                  </dd>
+                </div>
+              </dl>
             </div>
+            <h2>What happens next</h2>
             <p>
-              We have also sent you an SMS with your NHS number
+               We have sent you a notification with your NHS number. Please keep a record of it for future use.
+            </p>
+            <p>
+              You may close your browser.
             </p>
         </div>
       </div>

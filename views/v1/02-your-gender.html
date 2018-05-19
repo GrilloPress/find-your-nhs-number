@@ -18,21 +18,20 @@
       <div class="reading-width">
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h1 class="page-title">{{content_title}}</h1>
-              <div class="reading-width">
-                <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
-                  <h2 class="h3" id="error-summary">To use this online service, resolve the following errors</h2>
-                  <ul class="link-list" id="link-to-errors">
-                  </ul>
-                </div>
 
+              <div class="reading-width">
                   <form class="measure" method="post" action="/{{PROTOTYPE_URL}}/03-your-date-of-birth">
                       <div class="grid-row">
                         <div class="column--two-thirds">
                           <fieldset id="single-question" class="form-group form-row util-no-margin">
-                            <legend class="util-visuallyhidden">
-                              Your gender
+                            <legend>
+                              <h1 >{{content_title}}</h1>
                             </legend>
+                            <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                              <h2 class="h3" id="error-summary">To use this online service, resolve the following errors</h2>
+                              <ul class="link-list" id="link-to-errors">
+                              </ul>
+                            </div>
                             <div id="single-question-input-error" class="error error-message">
                               <p class="error-text">Indicate your choice to continue</p>
                             </div>
@@ -46,15 +45,28 @@
                             </label>
 
                             <input type="radio" name="gender" id="unspecified" value="unspecified" class="">
-                            <label for="unspecified" class="form-label form-label--radio multiple-choice--radio lg"> Unspecified
+                            <label for="unspecified" class="form-label form-label--radio multiple-choice--radio lg"> Non-binary
                             </label>
 
                           </fieldset>
                         </div>
                       </div>
 
-                      <input type="submit" class="button" id="submit-details" value="continue">
+                      <input type="submit" class="button" id="submit-details" value="Continue">
                   </form>
+
+                  <details class="" role="group">
+                    <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+                      <span class="details__summary">Why do we ask for your gender?</span>
+                    </summary>
+                    <div class="details__content" id="details-content-0" aria-hidden="true">
+                      <div class="reading-width">
+                        <p>
+                          In order to find your details in our database we need you to provide the same information a clinician would search for you. This includes gender.
+                        </p>
+                      </div>
+                    </div>
+                  </details>
               </div>
             </div>
           </div>

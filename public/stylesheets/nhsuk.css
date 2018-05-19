@@ -921,33 +921,33 @@ textarea {
 
 h1, .h1 {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 48px;
   text-transform: none; }
   @media (min-width: 641px) {
     h1, .h1 {
-      font-size: 48px;
-      line-height: 64px; } }
+      font-size: 40px;
+      line-height: 48px; } }
   @media (min-width: 925px) {
     h1, .h1 {
-      font-size: 64px;
-      line-height: 80px; } }
+      font-size: 40px;
+      line-height: 48px; } }
 
 h2, .h2 {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 40px;
   text-transform: none; }
   @media (min-width: 641px) {
     h2, .h2 {
-      font-size: 32px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
   @media (min-width: 925px) {
     h2, .h2 {
-      font-size: 36px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
 
 h3, .h3 {
   font-family: "Frutiger W01", Arial, sans-serif;
@@ -2044,33 +2044,33 @@ table {
 
 h1, .h1 {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 48px;
   text-transform: none; }
   @media (min-width: 641px) {
     h1, .h1 {
-      font-size: 48px;
-      line-height: 64px; } }
+      font-size: 40px;
+      line-height: 48px; } }
   @media (min-width: 925px) {
     h1, .h1 {
-      font-size: 64px;
-      line-height: 80px; } }
+      font-size: 40px;
+      line-height: 48px; } }
 
 h2, .h2 {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 40px;
   text-transform: none; }
   @media (min-width: 641px) {
     h2, .h2 {
-      font-size: 32px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
   @media (min-width: 925px) {
     h2, .h2 {
-      font-size: 36px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
 
 h3, .h3 {
   font-family: "Frutiger W01", Arial, sans-serif;
@@ -2284,6 +2284,9 @@ p {
   .js-enabled .is-collapsed .gallery__item--collage img {
     cursor: pointer; }
 
+h1 label {
+  margin-bottom: 1em; }
+
 .form-label {
   font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
@@ -2362,6 +2365,9 @@ p {
       line-height: 32px; } }
   .form-textbox:focus {
     outline: 3px solid #ffb81c; }
+
+form .grid-row {
+  margin-top: 0; }
 
 .multiple-choice--checkbox {
   position: absolute;
@@ -2848,33 +2854,33 @@ input::-webkit-inner-spin-button {
 
 h1, .h1 {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 48px;
   text-transform: none; }
   @media (min-width: 641px) {
     h1, .h1 {
-      font-size: 48px;
-      line-height: 64px; } }
+      font-size: 40px;
+      line-height: 48px; } }
   @media (min-width: 925px) {
     h1, .h1 {
-      font-size: 64px;
-      line-height: 80px; } }
+      font-size: 40px;
+      line-height: 48px; } }
 
 h2, .h2 {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 40px;
   text-transform: none; }
   @media (min-width: 641px) {
     h2, .h2 {
-      font-size: 32px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
   @media (min-width: 925px) {
     h2, .h2 {
-      font-size: 36px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
 
 h3, .h3 {
   font-family: "Frutiger W01", Arial, sans-serif;
@@ -3067,26 +3073,19 @@ input[type=range]:focus::-ms-fill-upper {
 
 .page-title {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 40px;
   text-transform: none;
-  padding: 32px 0; }
+  padding: 16px 0; }
   @media (min-width: 641px) {
     .page-title {
-      font-size: 42px;
+      font-size: 32px;
       line-height: 48px; } }
   @media (min-width: 925px) {
     .page-title {
-      font-size: 42px;
+      font-size: 36px;
       line-height: 48px; } }
-  .page-title::after {
-    content: " ";
-    display: block;
-    border-bottom: 4px solid;
-    color: #005eb8;
-    width: 130px;
-    margin-top: 32px; }
   .page-title.stepper {
     font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 40px;
@@ -3107,6 +3106,11 @@ input[type=range]:focus::-ms-fill-upper {
       font-size: 60%;
       margin-top: 16px; }
     .page-title.stepper::after {
+      content: " ";
+      display: block;
+      border-bottom: 4px solid;
+      color: #005eb8;
+      width: 130px;
       margin-top: 8px; }
 
 .page-title__NHSUK {
@@ -3545,12 +3549,25 @@ input[type=range]:focus::-ms-fill-upper {
     .page-links__container {
       margin: 16px 0; } }
 
-.review-your-answers dl {
-  display: inline-block; }
-
-.review-your-answers dd {
-  display: inline-block; }
-  .review-your-answers dd.change {
-    float: right; }
+.review-your-answers {
+  border: 1px solid;
+  border-width: 0 0 1px;
+  margin-top: 4px;
+  padding: 8px 0; }
+  .review-your-answers.nhs-number {
+    border: 0; }
+  .review-your-answers dl {
+    display: inline-block;
+    margin-top: 0; }
+  .review-your-answers dd {
+    display: inline-block; }
+    @media (max-width: 640px) {
+      .review-your-answers dd {
+        display: block; } }
+    .review-your-answers dd.change {
+      float: right; }
+      @media (max-width: 640px) {
+        .review-your-answers dd.change {
+          float: none; } }
 
 /*# sourceMappingURL=nhsuk.css.map */

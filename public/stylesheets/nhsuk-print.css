@@ -12,12 +12,12 @@ h1, .h1 {
   text-transform: none; }
   @media (min-width: 641px) {
     h1, .h1 {
-      font-size: 48px;
-      line-height: 64px; } }
+      font-size: 40px;
+      line-height: 48px; } }
   @media (min-width: 925px) {
     h1, .h1 {
-      font-size: 64px;
-      line-height: 80px; } }
+      font-size: 40px;
+      line-height: 48px; } }
 
 h2, .h2 {
   font-family: sans-serif;
@@ -27,12 +27,12 @@ h2, .h2 {
   text-transform: none; }
   @media (min-width: 641px) {
     h2, .h2 {
-      font-size: 32px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
   @media (min-width: 925px) {
     h2, .h2 {
-      font-size: 36px;
-      line-height: 48px; } }
+      font-size: 28px;
+      line-height: 40px; } }
 
 h3, .h3 {
   font-family: sans-serif;

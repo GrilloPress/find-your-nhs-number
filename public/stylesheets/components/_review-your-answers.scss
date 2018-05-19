@@ -1,23 +1,45 @@
 .review-your-answers {
 
+  border: 1px solid;
+  border-width: 0 0 1px;
+  margin-top: 4px;
+  padding: 8px 0;
+
+  &.nhs-number {
+
+    border: 0;
+
+  }
+
   dl {
 
     display: inline-block;
-  }
-
-  dt {
+    margin-top: 0;
 
   }
+
+//  dt {
+
+//  }
 
   dd {
 
     display: inline-block;
 
-    .answer {}
+    @include media(mobile) {
+      display: block;
+    }
+
+//  .answer {}
 
     &.change {
 
       float: right;
+
+      @include media(mobile) {
+        float: none;
+      }
+
     }
 
   }

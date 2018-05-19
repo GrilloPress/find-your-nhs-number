@@ -1,7 +1,8 @@
-{% set title = 'Enter your code - Find your NHS number' %}
-{% set content_title = 'Enter your code' %}
+{% set title = 'Enter your security code - Find your NHS number' %}
+{% set content_title = 'Enter your security code' %}
 {% set PROTOTYPE_URL = 'v1' %}
 {% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/07-enter-your-code.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 {% block body %}
@@ -14,9 +15,10 @@
 
   <div class="page-section">
     <div class="reading-width">
-      <h1 class="page-title stepper">{{content_title}}</h1>
+
       <div class="grid-row">
         <div class="column--two-thirds">
+          <h1 >{{content_title}}</h1>
             <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">
               Your code has been successfully sent!
             </p>
@@ -40,7 +42,7 @@
               </div>
               <input id="code-input" class="-small form-control" type="number">
               <p>Didn't receive your code? <a id="resend-code" href="javascript:void(0);" onclick="resendCode()">Resend code</a></p>
-              <input type="submit" class="button" value="submit" />
+              <input type="submit" class="button" value="Submit" />
             </div>
           </form>
         </div>

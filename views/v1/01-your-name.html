@@ -18,17 +18,21 @@
       <div class="reading-width">
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h1 class="page-title">{{content_title}}</h1>
               <div class="reading-width">
-                <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
-                  <h2 class="h3" id="error-summary">To use this online service, resolve the following errors</h2>
-                  <ul class="link-list" id="link-to-errors">
-                  </ul>
-                </div>
+                  <form method="post" action="/{{PROTOTYPE_URL}}/02-your-gender">
+                    <div class="grid-row">
+                    <div class="column--two-thirds">
+                    <fieldset>
+                      <legend>
+                        <h1>{{content_title}}</h1>
+                      </legend>
+                      <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                        <h2 class="h3" id="error-summary">To use this online service, resolve the following errors</h2>
+                        <ul class="link-list" id="link-to-errors">
+                        </ul>
+                      </div>
 
-                  <form class="measure" method="post" action="/{{PROTOTYPE_URL}}/02-your-gender">
-                      <div class="grid-row">
-                        <div class="column--two-thirds">
+
                           <div class="form-group form-row" id="first-name">
                             <label for="first-name-input" class="form-label error-label">First name</label>
                             <span class="error error-message error-text" id="first-name-error">
@@ -36,19 +40,21 @@
                             </span>
                             <input autocomplete="off" type="text" class="form-control" id="first-name-input" name="first-name" value="">
                           </div>
-                        </div>
 
-                        <div class="column--two-thirds">
+
+
                           <div class="form-group form-row" id="last-name">
                             <label for="last-name-input" class="form-label error-label">Last name</label>
                             <span class="error error-message error-text" id="last-name-error">Enter your last name
                             </span>
                             <input autocomplete="off" type="text" class="form-control" id="last-name-input" name="last-name" value="">
                           </div>
+                          </fieldset>
+                          <input type="submit" class="button" id="submit-details" value="Continue">
+
                         </div>
                       </div>
 
-                      <input type="submit" class="button" id="submit-details" value="continue">
                   </form>
               </div>
             </div>
