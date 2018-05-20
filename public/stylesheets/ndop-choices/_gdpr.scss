@@ -1,0 +1,52 @@
+.gdpr-cookie-section {
+
+  font-size: 17px !important;
+  background-color: #f0f8ff;
+  border-bottom: 2px solid #005eb8;
+
+  .page-section {
+    padding: 16px 0;
+  }
+
+  p {
+
+    font-size: 17px !important;
+    line-height: 24px;
+  }
+
+  details {
+
+    margin-top: 16px;
+  }
+
+  details summary {
+
+    font-size: 17px !important;
+    line-height: 24px;
+    color: #004382;
+
+  }
+
+  .button {
+
+    width: auto;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 8px 12px;
+
+    &.button--link {
+
+      background-color: transparent;
+      color: #004382;
+      box-shadow: none;
+    }
+  }
+
+
+
+  @media (min-width: 925px){
+    .page-section * + * {
+        margin-top: 16px;
+    }
+  }
+}

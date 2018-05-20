@@ -12,6 +12,27 @@ router.get('/home', function(req, res, next) {
 });
 
 // GET v1 index page.
+router.get('/cookie', function(req, res, next) {
+  res.render( 'cookie/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/cookie/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'cookie/' + theView );
+});
+
+router.get('/cookie/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'cookie/' + theDir + '/' + theView );
+});
+
+
+
+// GET v1 index page.
 router.get('/v1', function(req, res, next) {
   res.render( 'v1/index' );
 });
