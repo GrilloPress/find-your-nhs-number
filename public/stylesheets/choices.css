@@ -4709,5 +4709,42 @@ $grey-5
   @media (min-width: 925px) {
     .gdpr-cookie-section .page-section * + * {
       margin-top: 16px; } }
+  .gdpr-cookie-section .multiple-choice--checkbox {
+    position: absolute;
+    opacity: 0; }
+    .gdpr-cookie-section .multiple-choice--checkbox + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0; }
+    .gdpr-cookie-section .multiple-choice--checkbox + label:before {
+      content: '';
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 28px;
+      height: 28px;
+      border: 3px solid #005eb8; }
+    .gdpr-cookie-section .multiple-choice--checkbox:focus + label:before {
+      box-shadow: 0 0 0 5px yellow; }
+    .gdpr-cookie-section .multiple-choice--checkbox:checked + label:before {
+      background: transparent; }
+    .gdpr-cookie-section .multiple-choice--checkbox:checked + label:after {
+      content: "";
+      border: solid;
+      border-width: 0 0 5px 5px;
+      background: transparent;
+      width: 16px;
+      height: 10px;
+      position: absolute;
+      top: 5px;
+      left: 6px;
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      zoom: 1;
+      filter: alpha(opacity=0); }
+  .gdpr-cookie-section .checkbox-blue + label:before {
+    display: inline-block; }
 
 /*# sourceMappingURL=choices.css.map */
