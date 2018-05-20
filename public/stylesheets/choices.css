@@ -4688,6 +4688,8 @@ $grey-5
   border-bottom: 2px solid #005eb8; }
   .gdpr-cookie-section .page-section {
     padding: 16px 0; }
+  .gdpr-cookie-section .page-section * + * {
+    margin-top: 12px; }
   .gdpr-cookie-section p {
     font-size: 17px !important;
     line-height: 24px; }
@@ -4697,6 +4699,11 @@ $grey-5
     font-size: 17px !important;
     line-height: 24px;
     color: #004382; }
+  .gdpr-cookie-section legend {
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: 17px;
+    line-height: 24px; }
   .gdpr-cookie-section .button {
     width: auto;
     font-size: 17px;
@@ -4715,7 +4722,12 @@ $grey-5
     .gdpr-cookie-section .multiple-choice--checkbox + label {
       position: relative;
       cursor: pointer;
-      padding: 0; }
+      padding: 0;
+      margin-right: 8px;
+      display: block; }
+      @media (min-width: 925px) {
+        .gdpr-cookie-section .multiple-choice--checkbox + label {
+          display: inline-block; } }
     .gdpr-cookie-section .multiple-choice--checkbox + label:before {
       content: '';
       margin-right: 10px;
@@ -4724,7 +4736,7 @@ $grey-5
       height: 28px;
       border: 3px solid #005eb8; }
     .gdpr-cookie-section .multiple-choice--checkbox:focus + label:before {
-      box-shadow: 0 0 0 5px yellow; }
+      box-shadow: 0 0 0 5px #ffb81c; }
     .gdpr-cookie-section .multiple-choice--checkbox:checked + label:before {
       background: transparent; }
     .gdpr-cookie-section .multiple-choice--checkbox:checked + label:after {
@@ -4735,7 +4747,7 @@ $grey-5
       width: 16px;
       height: 10px;
       position: absolute;
-      top: 5px;
+      top: 6px;
       left: 6px;
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
@@ -4746,5 +4758,13 @@ $grey-5
       filter: alpha(opacity=0); }
   .gdpr-cookie-section .checkbox-blue + label:before {
     display: inline-block; }
+  .gdpr-cookie-section .util-no-margin {
+    margin: 0; }
+    @media (min-width: 925px) {
+      .gdpr-cookie-section .util-no-margin {
+        margin: 0; } }
+  .gdpr-cookie-section .table--responsive {
+    margin: 0;
+    overflow-x: auto; }
 
 /*# sourceMappingURL=choices.css.map */

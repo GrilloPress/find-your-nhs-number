@@ -8,6 +8,10 @@
     padding: 16px 0;
   }
 
+  .page-section * + * {
+    margin-top: 12px;
+  }
+
   p {
 
     font-size: 17px !important;
@@ -25,6 +29,14 @@
     line-height: 24px;
     color: #004382;
 
+  }
+
+  legend {
+
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .button {
@@ -59,6 +71,11 @@
       cursor: pointer;
       padding: 0;
       // @include bold-font(20);
+      margin-right: 8px;
+      display: block;
+      @media (min-width: 925px){
+        display: inline-block;
+      }
     }
 
     // Box.
@@ -73,7 +90,7 @@
 
     // Box focus
     &:focus + label:before {
-      box-shadow: 0 0 0 5px yellow;
+      box-shadow: 0 0 0 5px #ffb81c;
     }
 
     // Box checked
@@ -90,7 +107,7 @@
       width: 16px;
       height: 10px;
       position: absolute;
-      top: 5px;
+      top: 6px;
       left: 6px;
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
@@ -107,4 +124,20 @@
     display: inline-block;
 
   }
+
+  .util-no-margin {
+    margin: 0;
+    @media (min-width: 925px) {
+      margin: 0;
+    }
+  }
+
+  .table--responsive {
+
+    margin: 0;
+    overflow-x: auto;
+
+  }
+
+
 }
