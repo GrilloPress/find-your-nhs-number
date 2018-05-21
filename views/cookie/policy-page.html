@@ -1,0 +1,155 @@
+{% set title = 'Cookie policy - Find your NHS Number' %}
+{% set PROTOTYPE_URL = 'cookie' %}
+{% set content_title = "Cookie policy" %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/policy.js"></script>
+<script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
+{% endblock %}
+{% extends 'layouts/cookie.html' %}
+
+{% block gdpr %}
+{% endblock %}
+
+
+{% block body %}
+<div class="breadcrumb" aria-label="breadcrumb">
+  <ol>
+    <li><a href="#">Home</a></li>
+    <li class="breadcrumb__last">{{content_title}}</li>
+  </ol>
+</div>
+
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <h1 class="page-title__NHSUK">{{content_title}}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            NHSUK, NHS Choices and other services on <a href="/{{PROTOTYPE_URL}}/end">www.nhs.uk</a>, such as Change4Life, use cookies to ensure you get the best experience on the website.
+          </p>
+          <p>Cookies are used to:</p>
+          <ul>
+            <li>measure how you use the website so it can be updated and improved based on your needs</li>
+            <li>remember the notifications you’ve seen so that we don’t show them to you again</li>
+          </ul>
+
+          <h2 class="h3">Cookies to measure website use</h2>
+          <h3 class="h4">Google Analytics</h3>
+          <p>
+            We use Google Analytics software to collect information about how you use our services. We do this to help make sure the site is meeting the needs of its users and to help us make improvements. We have opted to make everything we send to Google anonymous — this means you can’t be identified.
+          </p>
+          <p>Google Analytics sets the following cookies:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Purpose</th>
+                <th>Expires</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>_ga</td>
+                <td>This helps us count how many people visit NHS.UK by tracking if you've visited before</td>
+                <td>2 years</td>
+              </tr>
+              <tr>
+                <td>_gat</td>
+                <td>Used to manage the rate at which page view requests are made</td>
+                <td>10 minutes</td>
+              </tr>
+              <tr>
+                <td>_utma</td>
+                <td>Like ga, this lets us know if you’ve visited before, so we can count how many of our visitors are new to NHS.UK or to a certain page</td>
+                <td>2 years</td>
+              </tr>
+              <tr>
+                <td>_utmb</td>
+                <td>This works with utmc to calculate the average length of time you spend on NHS.UK</td>
+                <td>30 minutes</td>
+              </tr>
+              <tr>
+                <td>_utmc</td>
+                <td>This works with utmb to calculate when you close your browser</td>
+                <td>when you close your browser</td>
+              </tr>
+              <tr>
+                <td>_utmz</td>
+                <td>This tells us how you reached NHS.UK (eg from another website or a search engine)</td>
+                <td>6 months</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            You can <a href="https://tools.google.com/dlpage/gaoptout">
+                    opt out of
+                    Google Analytics cookies
+                </a>.
+          </p>
+          <h3 class="h4">Hotjar</h3>
+          <div class="table--responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Purpose</th>
+                  <th>Expires</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>_hjUserId</td>
+                  <td>This cookie is set as soon as a user loads a page which contains the Hotjar code. The cookie contains a universally unique identifier (UUID) which allows Hotjar to track the same visitor across multiple pages and sessions</td>
+                  <td>365 days</td>
+                </tr>
+                <tr>
+                  <td>_hjClosedSurveyInvites</td>
+                  <td>This cookie is set once a visitor interacts with a Survey invitation modal popup. It is used to ensure that the same invite does not re-appear if it has already been shown</td>
+                  <td>365 days</td>
+                </tr>
+                <tr>
+                  <td>_hjDonePolls</td>
+                  <td>This cookie is set once a visitor completes a poll using the Feedback Poll widget. It is used to ensure that the same poll does not re-appear if it has already been filled in</td>
+                  <td>365 days</td>
+                </tr>
+                <tr>
+                  <td>_hjMinimizedPolls</td>
+                  <td>This cookie is set once a visitor minimizes a Feedback Poll widget. It is used to ensure that the widget stays minimizes when the visitor navigates through your site</td>
+                  <td>365 days</td>
+                </tr>
+                <tr>
+                  <td>_hjDoneTestersWidgets</td>
+                  <td>This cookie is set once a visitor submits their information in the Recruit User Testers widget. It is used to ensure that the same form does not re-appear if it has already been filled in</td>
+                  <td>365 days</td>
+                </tr>
+                <tr>
+                  <td>_hjMinimizedTestersWidgets</td>
+                  <td>This cookie is set once a visitor minimizes a Recruit User Testers widget. It is used to ensure that the widget stays minimizes when the visitor navigates through your site</td>
+                  <td>365 days</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          {{ patterns.page_nav( "Homepage", "/" + PROTOTYPE_URL + "/end.html", "", "" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

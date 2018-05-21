@@ -464,7 +464,7 @@ body {
 
 @media print {
   .util-print-hide {
-    display: none; } }
+    display: none !important; } }
 
 .util-no-margin {
   margin-top: 0 !important; }
