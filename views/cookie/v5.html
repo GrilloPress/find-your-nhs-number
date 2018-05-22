@@ -2,7 +2,7 @@
 {% set PROTOTYPE_URL = 'cookie' %}
 {% set content_title = "Find your NHS Number" %}
 {% block scripts %}
-<script src="/javascripts/{{PROTOTYPE_URL}}/v4.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/v5.js"></script>
 <script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
 {% endblock %}
 {% extends 'layouts/cookie.html' %}
@@ -57,7 +57,7 @@
                   Website usage
                 </label>
 
-              <input type="checkbox" id="preferences" class="multiple-choice--checkbox checkbox-blue">
+              <input type="checkbox" id="preferences" class="multiple-choice--checkbox checkbox-blue" checked>
               <label for="preferences" class="">
                   Site preferences
                 </label>
