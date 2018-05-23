@@ -4693,9 +4693,14 @@ $grey-5
   .gdpr-cookie-section p {
     font-size: 17px;
     line-height: 22px; }
+  .gdpr-cookie-section h4, .gdpr-cookie-section .h4 {
+    font-size: 22px;
+    line-height: 28px; }
     @media (min-width: 925px) {
-      .gdpr-cookie-section p {
-        font-size: 18px; } }
+      .gdpr-cookie-section h4, .gdpr-cookie-section .h4 {
+        line-height: 32px; } }
+  .gdpr-cookie-section h5, .gdpr-cookie-section .h5 {
+    font-size: 19px; }
   .gdpr-cookie-section details {
     margin-top: 16px; }
   .gdpr-cookie-section details summary {
@@ -4704,8 +4709,8 @@ $grey-5
     color: #004382; }
   .gdpr-cookie-section legend {
     font-weight: 600;
-    font-size: 17px;
-    line-height: 24px; }
+    font-size: 18px;
+    line-height: 22px; }
   .gdpr-cookie-section .button {
     width: auto;
     font-size: 17px;

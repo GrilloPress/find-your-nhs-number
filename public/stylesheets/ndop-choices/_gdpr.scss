@@ -16,9 +16,20 @@
 
     font-size: 17px;
     line-height: 22px;
+  }
+
+  h4, .h4 {
+
+    font-size: 22px;
+    line-height: 28px;
     @media (min-width: 925px) {
-      font-size: 18px;
+      line-height: 32px;
     }
+  }
+
+  h5, .h5 {
+
+    font-size: 19px;
   }
 
   details {
@@ -37,8 +48,8 @@
   legend {
 
     font-weight: 600;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .button {
