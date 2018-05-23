@@ -5,17 +5,20 @@
   border-bottom: 2px solid #005eb8;
 
   .page-section {
-    padding: 16px 0;
+    padding: 12px 0;
   }
 
   .page-section * + * {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   p {
 
-    font-size: 17px !important;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 22px;
+    @media (min-width: 925px) {
+      font-size: 18px;
+    }
   }
 
   details {
@@ -34,7 +37,6 @@
   legend {
 
     font-weight: 600;
-    margin-bottom: 2px;
     font-size: 17px;
     line-height: 24px;
   }

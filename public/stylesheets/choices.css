@@ -4687,12 +4687,15 @@ $grey-5
   background-color: #f0f8ff;
   border-bottom: 2px solid #005eb8; }
   .gdpr-cookie-section .page-section {
-    padding: 16px 0; }
+    padding: 12px 0; }
   .gdpr-cookie-section .page-section * + * {
-    margin-top: 12px; }
+    margin-top: 10px; }
   .gdpr-cookie-section p {
-    font-size: 17px !important;
-    line-height: 24px; }
+    font-size: 17px;
+    line-height: 22px; }
+    @media (min-width: 925px) {
+      .gdpr-cookie-section p {
+        font-size: 18px; } }
   .gdpr-cookie-section details {
     margin-top: 16px; }
   .gdpr-cookie-section details summary {
@@ -4701,7 +4704,6 @@ $grey-5
     color: #004382; }
   .gdpr-cookie-section legend {
     font-weight: 600;
-    margin-bottom: 2px;
     font-size: 17px;
     line-height: 24px; }
   .gdpr-cookie-section .button {
