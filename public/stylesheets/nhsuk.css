@@ -2485,6 +2485,10 @@ form .grid-row {
   border: 3px solid #005eb8;
   border-radius: 100%; }
 
+.form-row-error-active [type="radio"]:checked + label:before,
+.form-row-error-active [type="radio"]:not(:checked) + label:before {
+  border-color: #da291c; }
+
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
   content: '';

@@ -156,7 +156,18 @@
     height: 34px;
     border: 3px solid $blue;
     border-radius: 100%;
+
 }
+
+.form-row-error-active {
+
+  & [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    border-color: $red;
+  }
+
+}
+
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
