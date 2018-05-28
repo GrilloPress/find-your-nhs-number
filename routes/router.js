@@ -57,48 +57,5 @@ router.get('/v1/:subdir/:subdir2/:view', function(req, res, next) {
   var theDir2 = req.params.subdir2;
   res.render( 'v1/' + theDir + '/' + theDir2 + '/' + theView );
 });
-// // // // // // //
-// POST
-// // // // // // //
-router.post('/v1/01-your-name', function(req, res, next) {
-
-  res.render( 'v1/01-your-name' );
-});
-
-router.post('/v1/02-your-gender', function(req, res, next) {
-
-  res.render( 'v1/02-your-gender' );
-});
-
-router.post('/v1/03-your-date-of-birth', function(req, res, next) {
-
-  res.render( 'v1/03-your-date-of-birth' );
-});
-
-router.post('/v1/04-your-postcode', function(req, res, next) {
-
-  res.render( 'v1/04-your-postcode' );
-});
-
-router.post('/v1/05-review-your-details', function(req, res, next) {
-
-  res.render( 'v1/05-review-your-details' );
-});
-
-router.post('/v1/06-verification-option', function(req, res, next) {
-
-  res.render( 'v1/06-verification-option' );
-});
-
-router.post('/v1/07-enter-your-code', function(req, res, next) {
-
-  res.render( 'v1/07-enter-your-code' );
-});
-
-router.post('/v1/08-your-nhs-number', function(req, res, next) {
-
-  res.render( 'v1/08-your-nhs-number' );
-});
-
 
 module.exports = router;

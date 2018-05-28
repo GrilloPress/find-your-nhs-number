@@ -2,7 +2,7 @@
 {% set content_title = 'Review your details' %}
 {% set PROTOTYPE_URL = 'v1' %}
 {% block scripts %}
-<script src="/javascripts/{{PROTOTYPE_URL}}/01-your-name.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/05-review-your-details.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 
@@ -21,7 +21,7 @@
               <h1 >{{content_title}}</h1>
               <div class="reading-width">
                 <div class="">
-                  <dl class="review-your-answers">
+                  <dl class="review-your-answers" id="your-name">
                     <div>
                       <dt class="question">
                         Your name
@@ -30,14 +30,14 @@
                         Sally Faketon
                       </dd>
                       <dd class="change">
-                        <a href="#">
+                        <a href="/{{PROTOTYPE_URL}}/change/01-your-name">
                           Change<span class="util-visuallyhidden"> your name</span>
                         </a>
                       </dd>
                     </div>
                   </dl>
 
-                  <dl class="review-your-answers">
+                  <dl class="review-your-answers" id="your-gender">
                     <div>
                       <dt class="question">
                         Your gender
@@ -46,14 +46,14 @@
                         Female
                       </dd>
                       <dd class="change">
-                        <a href="#">
+                        <a href="/{{PROTOTYPE_URL}}/change/02-your-gender">
                           Change<span class="util-visuallyhidden"> your gender</span>
                         </a>
                       </dd>
                     </div>
                   </dl>
 
-                  <dl class="review-your-answers">
+                  <dl class="review-your-answers" id="your-dob">
                     <div>
                       <dt class="question">
                         Your date of birth
@@ -62,23 +62,23 @@
                         05 07 1948
                       </dd>
                       <dd class="change">
-                        <a href="#">
+                        <a href="/{{PROTOTYPE_URL}}/change/03-your-date-of-birth">
                           Change<span class="util-visuallyhidden"> your date of birth</span>
                         </a>
                       </dd>
                     </div>
                   </dl>
 
-                  <dl class="review-your-answers">
+                  <dl class="review-your-answers" id="your-postcode">
                     <div>
                       <dt class="question">
                         Your postcode
                       </dt>
                       <dd class="answer">
-                        Ls1 1qf
+                        LS1 6AE
                       </dd>
                       <dd class="change">
-                        <a href="#">
+                        <a href="/{{PROTOTYPE_URL}}/change/04-your-postcode">
                           Change<span class="util-visuallyhidden"> your postcode</span>
                         </a>
                       </dd>
@@ -87,7 +87,7 @@
                 </div>
 
 
-                  <form class="measure" method="post" action="/{{PROTOTYPE_URL}}/06-verification-option">
+                  <form action="javascript:submit()">
                     <p>
                       By submitting your details you agree to let us search for your details in our database to send you a security code.
                     </p>

@@ -1,0 +1,33 @@
+{% set title = 'Incorrect code - Find your NHS number' %}
+{% set content_title = 'Incorrect code' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <h1>{{content_title}}</h1>
+              <p>
+                Sorry, we were unable to verify your security code.
+              </p>
+              <h2>What happens next</h2>
+              <p>
+                You can ask your GP practice for help if you can't find your NHS number.
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+</main>
+{% endblock %}

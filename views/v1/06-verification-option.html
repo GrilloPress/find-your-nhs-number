@@ -2,7 +2,7 @@
 {% set content_title = 'Get your security code' %}
 {% set PROTOTYPE_URL = 'v1' %}
 {% block scripts %}
-<script src="/javascripts/{{PROTOTYPE_URL}}/03-verification-option.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/06-verification-option.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 
@@ -39,13 +39,13 @@
               </ul>
             </div>
 
-            <form id="verification-radio" class="form" method="post" action="/{{PROTOTYPE_URL}}/07-enter-your-code">
-                <fieldset class="form-group form-row">
-<legend class="h3 error-label">Where should we send your verification code?</legend>
+            <form action="javascript:submit()">
+                <fieldset class="form-group form-row" id="verification-radio">
+<legend class="h3">Where should we send your verification code?</legend>
 
                 <span class="form-label__hint">The full email address and phone number have been hidden for your privacy</span>
                 <div class="error error-message">
-                  <p class="error-text">To use the online service, please select an option below:</p>
+                  <p class="error-text error-label">To use the online service, select an option below:</p>
                 </div>
 
                 <input type="radio" name="channel-choice" id="email-verification" value="email" class="multiple-choice--radio">

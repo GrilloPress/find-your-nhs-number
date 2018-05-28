@@ -1,0 +1,34 @@
+{% set title = 'Incorrect contact details - Find your NHS number' %}
+{% set content_title = 'Incorrect contact details' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 >{{content_title}}</h1>
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>Sorry, we seem to have the wrong contact details for you.</p>
+              <p>This may be because you have not updated your details with your GP Practice, or your GP Practice has not yet shared them with us.</p>
+              <h2>What happens next</h2>
+              <p>
+                You can ask your GP practice for help if you can't find your NHS number.
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}
