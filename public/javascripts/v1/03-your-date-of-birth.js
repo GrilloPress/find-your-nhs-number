@@ -35,6 +35,7 @@ function checkDetails(isDayComplete, isMonthComplete, isYearComplete) {
 
   } else {
 
+    $('#' + 'dob' + '-error-link').remove();
     $( "#link-to-errors" ).append( "<li id='" + "dob" + "-error-link'>" + "<a href='#" + "dob" + "'>" + "" + "Date of birth" + " is missing" + "</a>" + "</li>" );
 
     $( '#dob' ).addClass("form-row-error-active has-error");
