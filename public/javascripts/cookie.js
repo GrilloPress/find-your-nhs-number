@@ -3,16 +3,16 @@
 
 var dropCookie = true;                      // false disables the Cookie, allowing you to style the banner
 var cookieDuration = 30;                    // Number of days before the cookie expires, and the banner reappears
-var cookieName = 'prototypeK_cookie';        // Name of our cookie
+var cookieName = 'find_your_nhs_number_seen_cookie_message'; // Name of our cookie
 var cookieValue = 'on';                     // Value of cookie
-var PROTOTYPE_URL = "/v1";
+var PROTOTYPE_URL = "/cookie-policy";
 
 function createDiv(){
 
     var bodytag = document.getElementsByTagName('body')[0];
     var div = document.createElement('div');
     div.setAttribute('class','banner cookie');
-    div.innerHTML = '<div class="page-section">We use cookies to make this service simpler. <a href="' + PROTOTYPE_URL  + '/00-cookie-policy" target="_blank" rel="nofollow" title="Find out more about cookies">Find out more about cookies<span class="util-visuallyhidden"> - Page opens in new window</span></a><span aria-hidden="true"> (opens in new window)</span>.</div>';
+    div.innerHTML = '<div class="page-section">We use cookies to make this service simpler. <a href="' + PROTOTYPE_URL  + '" target="_blank" rel="nofollow" title="Find out more about cookies">Find out more about cookies<span class="util-visuallyhidden"> - Page opens in new window</span></a><span aria-hidden="true"> (opens in new window)</span>.</div>';
 
     // bodytag.appendChild(div); // Adds the Cookie Law Banner just before the closing </body> tag
     // or
