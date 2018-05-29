@@ -1,5 +1,6 @@
 {% set title = 'Find your NHS Number' %}
 {% set PROTOTYPE_URL = 'v1' %}
+{% set ANALYTICS_TRUE = 'TRUE' %}
 {% extends 'layouts/layout.html' %}
 
 {% block body %}
@@ -17,27 +18,115 @@
       <h1 class="local-header__title">{{title}}</h1>
       <div class="local-header__intro">
         <div class="reading-width">
-          <p>April-May 2018</p>
+          <p>May 2018</p>
         </div>
       </div>
     </div>
 
-    <p>This Prototype was created to facilitate NHSUK to produce the "Find your NHS number" landing pages.</p>
+    <p>This Prototype was created to explore the "Find your NHS number" service.</p>
 
     <a role="button" class="button" href="/{{PROTOTYPE_URL}}/find-your-nhs-number">Start Prototype</a>
     <hr>
     <h2 id="prototype-sections">Prototype sections</h2>
     <div class="grid-row">
       <div class="column--one-half">
-        <h3>Pages</h3>
+        <h3>NHSUK Pages</h3>
         <ol>
           <li>
             <a href="/{{PROTOTYPE_URL}}/find-your-nhs-number">Find your NHS number</a>
           </li>
         </ol>
+        <h3>Emails and text messages</h3>
+        <ol>
+          <li>
+            <a href="/static/{{PROTOTYPE_URL}}/emails/otp.html">Security code email</a>
+          </li>
+          <li>
+            <a href="/static/{{PROTOTYPE_URL}}/emails/confirmation.html">Confirmation email</a>
+          </li>
+        </ol>
         <h3>Additional</h3>
         <ol>
+          <li>
+            Privacy policy
+          </li>
+          <li>
+            Cookie policy
+          </li>
+          <li>
+            Enable JavaScript
+          </li>
+          <li>
+            Enable Cookies
+          </li>
+        </ol>
 
+      </div>
+      <div class="column--one-half">
+        <h3>Service</h3>
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/00-how-to-use-the-online-service">How to use the online service</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-your-name">Your name</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-your-gender">Your gender</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-your-date-of-birth">Your date of birth</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-your-postcode">Your postcode</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-review-your-details">Review your details</a>
+            <ul>
+              <li>
+                <a href="/{{PROTOTYPE_URL}}/change/01-your-name">Your name (change)</a>
+              </li>
+              <li>
+                <a href="/{{PROTOTYPE_URL}}/change/02-your-gender">Your gender (change)</a>
+              </li>
+              <li>
+                <a href="/{{PROTOTYPE_URL}}/change/03-your-date-of-birth">Your date of birth (change)</a>
+              </li>
+              <li>
+                <a href="/{{PROTOTYPE_URL}}/change/04-your-postcode">Your postcode (change)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-verification-option">Get your security code</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/07-enter-your-code">Enter your code</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/08-your-nhs-number">Your NHS number</a>
+          </li>
+        </ol>
+        <h3>Errors</h3>
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/error/05X-verification-fail">Sorry, we couldn't find your details</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/error/06X-contact-us">Incorrect contact details</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/error/07X-incorrect-code">Incorrect code</a>
+          </li>
+          <li>
+            Page not found
+          </li>
+          <li>
+            Service unavailable
+          </li>
+          <li>
+            Session timeout
+          </li>
         </ol>
       </div>
 

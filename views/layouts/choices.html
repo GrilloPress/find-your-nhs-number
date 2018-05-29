@@ -90,7 +90,9 @@
     {% endif %}
 
     {% include "partials/_choices_footer.html" %}
-
+    {% if ANALYTICS_TRUE %}
+      {% include "partials/_analytics.html" %}
+    {% endif %}
 
   </body>
 </html>
