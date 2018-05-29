@@ -34,7 +34,7 @@ hr {
 
 html,
 html * {
-  font-family: "Frutiger W01"; }
+  font-family: "Frutiger W01", Arial, sans-serif; }
 
 html {
   background-color: #005eb8;
@@ -186,7 +186,7 @@ details {
   clear: both;
   display: block; }
   details summary {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -255,7 +255,7 @@ fieldset {
     display: table-cell; }
 
 legend {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -275,7 +275,7 @@ legend {
     -webkit-margin-top-collapse: separate; }
 
 textarea {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -296,7 +296,7 @@ textarea {
     outline: 3px solid #ffb81c; }
 
 h1 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -311,7 +311,7 @@ h1 {
       line-height: 80px; } }
 
 h2 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 40px;
@@ -326,7 +326,7 @@ h2 {
       line-height: 48px; } }
 
 h3 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -341,7 +341,7 @@ h3 {
       line-height: 32px; } }
 
 h4 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -356,7 +356,7 @@ h4 {
       line-height: 32px; } }
 
 h5 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -371,7 +371,7 @@ h5 {
       line-height: 24px; } }
 
 h6 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -439,7 +439,7 @@ a:focus {
   outline: 3px solid #ffb81c; }
 
 ul {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -456,7 +456,7 @@ ul {
       line-height: 32px; } }
 
 ol {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -475,7 +475,7 @@ ol {
     padding-left: .2em; }
 
 dl {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -489,7 +489,7 @@ dl {
       font-size: 20px;
       line-height: 32px; } }
   dl dt {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
@@ -595,7 +595,7 @@ dl {
   transform: rotate(-45deg); }
 
 p {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -626,7 +626,7 @@ table {
   margin: 16px 0 32px;
   width: 100%; }
   table caption {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -646,7 +646,7 @@ table {
         margin-bottom: 32px; } }
   table th,
   table td {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -665,7 +665,7 @@ table {
         font-size: 16px;
         line-height: 24px; } }
   table th {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
@@ -723,7 +723,7 @@ table {
       float: left; } }
 
 .global-header__service-name {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -741,7 +741,7 @@ table {
       line-height: 24px; } }
   @media (min-width: 641px) {
     .global-header__service-name {
-      font-family: "Frutiger W01";
+      font-family: "Frutiger W01", Arial, sans-serif;
       font-size: 20px;
       font-weight: 400;
       line-height: 32px;
@@ -763,7 +763,7 @@ table {
   border-top: 4px solid #003087;
   color: #fff; }
   .global-footer * {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -827,7 +827,7 @@ table {
 .notification-banner {
   background-color: #f0f4f5; }
   .notification-banner * {
-    font-family: "Frutiger W01";
+    font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -966,7 +966,7 @@ table {
     color: #fff; }
 
 .local-header__title {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 40px;
@@ -1006,7 +1006,7 @@ table {
     width: 130px; }
 
 .button {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -1084,7 +1084,7 @@ table {
     top: -10%; }
 
 .button--secondary {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -1162,7 +1162,7 @@ table {
     top: -10%; }
 
 .button--cancel {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -1303,7 +1303,7 @@ table {
     width: 47%; } }
 
 .article-pagination__prefix {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1323,7 +1323,7 @@ table {
   text-decoration: underline; }
 
 h1 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -1338,7 +1338,7 @@ h1 {
       line-height: 80px; } }
 
 h2 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 40px;
@@ -1353,7 +1353,7 @@ h2 {
       line-height: 48px; } }
 
 h3 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1368,7 +1368,7 @@ h3 {
       line-height: 32px; } }
 
 h4 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -1383,7 +1383,7 @@ h4 {
       line-height: 32px; } }
 
 h5 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -1398,7 +1398,7 @@ h5 {
       line-height: 24px; } }
 
 h6 {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1413,7 +1413,7 @@ h6 {
       line-height: 24px; } }
 
 p {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -1566,7 +1566,7 @@ p {
     cursor: pointer; }
 
 .form-label {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -1582,7 +1582,7 @@ p {
       line-height: 32px; } }
 
 .form-label--large {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 40px;
@@ -1606,7 +1606,7 @@ p {
       margin-top: 16px; } }
 
 .form-textbox {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -1629,7 +1629,7 @@ p {
     outline: 3px solid #ffb81c; }
 
 .multiple-choice {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -1752,7 +1752,7 @@ p {
     content: ""; } }
 
 .meta {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -1813,7 +1813,7 @@ p {
     margin-top: 0; }
 
 .step-list {
-  font-family: "Frutiger W01";
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
