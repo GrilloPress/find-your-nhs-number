@@ -1,0 +1,46 @@
+{% set title = 'Enable JavaScript to continue - Find your NHS number' %}
+{% set content_title = 'Enable JavaScript to continue' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <!-- What the code would look like:
+  <noscript>
+   For full functionality of this site it is necessary to enable JavaScript.
+   Here are the <a href="https://www.enable-javascript.com/" target="_blank">
+   instructions how to enable JavaScript in your web browser</a>.
+  </noscript>
+  -->
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 >{{content_title}}</h1>
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                To use the online 'Find your NHS number' service it is necessary to enable JavaScript.
+              </p>
+              <p>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.enable-javascript.com/">Find out how to enable JavaScript in your web browser<span class="util-visuallyhidden"> - Page opens in new window</span></a> <span aria-hidden="true"> (opens in new window)</span>.
+              </p>
+                <h2 class="h3" id="other-ways-to-manage-your-choice">Other ways to manage your choice </h2>
+                <p>
+                  If you are unable or do not wish to use our online service, see <a href="/{{PROTOTYPE_URL}}/00-other-ways-to-manage-your-choice">other ways to manage your choice</a>.
+                </p>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}
