@@ -1,0 +1,33 @@
+{% set title = "Unable to use this service online - Find your NHS number" %}
+{% set content_title = "Unable to use this service online" %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find your NHS number
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <h1 class="page-title">{{content_title}}</h1>
+              <p>Sorry, you must be aged 13 or over to use this service.</p>
+
+              <h2>How to find your NHS number</h2>
+              <p>
+                You can ask your GP practice for help if you can't find your NHS number.
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+
+</main>
+{% endblock %}

@@ -30,6 +30,10 @@ function submit() {
 
     window.location.href = "/v1/error/05X-verification-fail";
 
+  } else if (sessionStorage.firstName === "Age") {
+
+    window.location.href = "/v1/error/05X-age-restriction";
+
   } else {
 
     window.location.href = "/v1/06-verification-option";
