@@ -1,8 +1,7 @@
-{% set title = 'Find your NHS Number' %}
-{% set PROTOTYPE_URL = 'v1' %}
-{% set ANALYTICS_TRUE = 'TRUE' %}
+{% import "config/v1.html" as CONFIG %}
+{% set title = "Prototype Index for " + CONFIG.PROTOTYPE_TITLE %}
+{% set ANALYTICS_TRUE = CONFIG.ANALYTICS %}
 {% extends 'layouts/layout.html' %}
-
 {% block body %}
 <main id="content" role="main">
   <div class="page-section">
@@ -10,12 +9,12 @@
   <nav aria-label="Breadcrumb">
     <ol class="list--breadcrumb">
       <li><a href="/">Index</a></li>
-      <li>{{title}}</li>
+      <li>{{CONFIG.PROTOTYPE_TITLE}}</li>
     </ol>
   </nav>
 
     <div class="local-header">
-      <h1 class="local-header__title">{{title}}</h1>
+      <h1 class="local-header__title">{{CONFIG.PROTOTYPE_TITLE}}</h1>
       <div class="local-header__intro">
         <div class="reading-width">
           <p>May 2018</p>
@@ -24,8 +23,7 @@
     </div>
 
     <p>This Prototype was created to explore the "Find your NHS number" service.</p>
-
-    <a role="button" class="button" href="/{{PROTOTYPE_URL}}/find-your-nhs-number">Start Prototype</a>
+    <a role="button" class="button" href="/{{CONFIG.PROTOTYPE_URL}}/find-your-nhs-number">Start Prototype</a>
     <hr>
     <h2 id="prototype-sections">Prototype sections</h2>
     <div class="grid-row">
@@ -33,31 +31,31 @@
         <h3>NHSUK Pages</h3>
         <ol>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/find-your-nhs-number">Find your NHS number</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/find-your-nhs-number">Find your NHS number</a>
           </li>
         </ol>
         <h3>Emails and text messages</h3>
         <ol>
           <li>
-            <a href="/static/{{PROTOTYPE_URL}}/emails/otp.html">Security code email</a>
+            <a href="/static/{{CONFIG.PROTOTYPE_URL}}/emails/otp.html">Security code email</a>
           </li>
           <li>
-            <a href="/static/{{PROTOTYPE_URL}}/emails/confirmation.html">Confirmation email</a>
+            <a href="/static/{{CONFIG.PROTOTYPE_URL}}/emails/confirmation.html">Confirmation email</a>
           </li>
         </ol>
         <h3>Additional</h3>
         <ol>
           <li>
-            Privacy policy
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/00-privacy-notice">Privacy policy</a>
           </li>
           <li>
-            Cookie policy
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/00-cookie-policy">Cookie policy</a>
           </li>
           <li>
-            Enable JavaScript
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/00-enable-javascript">Enable JavaScript</a>
           </li>
           <li>
-            Enable Cookies
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/00-enable-cookies">Enable cookies</a>
           </li>
         </ol>
 
@@ -66,57 +64,57 @@
         <h3>Service</h3>
         <ol>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/00-how-to-use-the-online-service">How to use the online service</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/00-how-to-use-the-online-service">How to use the online service</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/01-your-name">Your name</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/01-your-name">Your name</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/02-your-gender">Your gender</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/02-your-gender">Your gender</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/03-your-date-of-birth">Your date of birth</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/03-your-date-of-birth">Your date of birth</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/04-your-postcode">Your postcode</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/04-your-postcode">Your postcode</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/05-review-your-details">Review your details</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/05-review-your-details">Review your details</a>
             <ul>
               <li>
-                <a href="/{{PROTOTYPE_URL}}/change/01-your-name">Your name (change)</a>
+                <a href="/{{CONFIG.PROTOTYPE_URL}}/change/01-your-name">Your name (change)</a>
               </li>
               <li>
-                <a href="/{{PROTOTYPE_URL}}/change/02-your-gender">Your gender (change)</a>
+                <a href="/{{CONFIG.PROTOTYPE_URL}}/change/02-your-gender">Your gender (change)</a>
               </li>
               <li>
-                <a href="/{{PROTOTYPE_URL}}/change/03-your-date-of-birth">Your date of birth (change)</a>
+                <a href="/{{CONFIG.PROTOTYPE_URL}}/change/03-your-date-of-birth">Your date of birth (change)</a>
               </li>
               <li>
-                <a href="/{{PROTOTYPE_URL}}/change/04-your-postcode">Your postcode (change)</a>
+                <a href="/{{CONFIG.PROTOTYPE_URL}}/change/04-your-postcode">Your postcode (change)</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/06-verification-option">Get your security code</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/06-verification-option">Get your security code</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/07-enter-your-code">Enter your code</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/07-enter-your-code">Enter your code</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/08-your-nhs-number">Your NHS number</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/08-your-nhs-number">Your NHS number</a>
           </li>
         </ol>
         <h3>Errors</h3>
         <ol>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/error/05X-verification-fail">Sorry, we couldn't find your details</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/error/05X-verification-fail">Sorry, we couldn't find your details</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/error/06X-contact-us">Incorrect contact details</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/error/06X-contact-us">Incorrect contact details</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/error/07X-incorrect-code">Incorrect code</a>
+            <a href="/{{CONFIG.PROTOTYPE_URL}}/error/07X-incorrect-code">Incorrect code</a>
           </li>
           <li>
             Page not found
